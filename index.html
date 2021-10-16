@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+</head>
+
+<body>
+    <style background-size: 100%>
+        body {
+            background-image: url("https://i.redd.it/251qqynzjx421.jpg");
+        }
+    </style>
+
+    <header class="jumbotron">
+        <h1 class="display-3">𝗪𝗼𝗿𝗸 𝗗𝗮𝘆 𝗣𝗹𝗮𝗻𝗻𝗲𝗿 プランナー</h1>
+        <p class="lead">𝘗𝘭𝘢𝘯 𝘰𝘶𝘵 𝘺𝘰𝘶𝘳 𝘥𝘢𝘪𝘭𝘺 𝘧𝘰𝘳 𝘵𝘩𝘪𝘴 𝘸𝘦𝘦𝘬 𝘸𝘪𝘵𝘩 𝘵𝘩𝘪𝘴 𝘴𝘪𝘮𝘱𝘭𝘦 𝘱𝘢𝘨𝘦! 📅 - 𝘊𝘳𝘢𝘻𝘺𝘉𝘳𝘰𝘬𝘦𝘊𝘰𝘥𝘦𝘴 📝ɴᴏᴛᴇ: ᴍᴀᴋᴇ ꜱᴜʀᴇ ᴛᴏ ᴄʟɪᴄᴋ ᴛʜᴇ ᴍɪᴅᴅʟᴇ ᴏꜰ ᴛʜᴇ ʙᴏx ᴛᴏ ɪɴᴘᴜᴛ ʏᴏᴜʀ ᴅᴀɪʟʏ ɢᴏᴀʟ!
+        </p>
+        <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+        <!-- The hour of the day goes right here! -->
+        <div class="row time-block">
+            <div class="hour">🕑𝟭𝟬:𝟬𝟬 𝗔𝗠</div>
+            <form class="description row1"><textarea class="input1 output1"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn1"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟭𝟭:𝟬𝟬 𝗔𝗠</div>
+            <form class="description row2"><textarea class="input2 output2"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn2"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟭𝟮:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row3"><textarea class="input3 output3"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn3"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟭:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row4"><textarea class="input4 output4"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn4"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟮:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row5"><textarea class="input5 output5"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn5"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟯:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row6"><textarea class="input6 output6"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn6"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟰:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row7"><textarea class="input7 output7"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn7"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟱:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row8"><textarea class="input8 output8"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn8"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <div class="row time-block">
+            <div class="hour">🕑𝟬𝟲:𝟬𝟬 𝗣𝗠</div>
+            <form class="description row9"><textarea class="input9 output9"></textarea></form>
+            <div><button class="saveBtn" id="saveBtn9"><i class="fa fa-floppy-o fa-3x" aria-hidden="true"></i></button></div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
